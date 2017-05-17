@@ -108,7 +108,7 @@ echo -e 'Would you like to auto-install vim plugins ? y or n then presse [ENTER]
 read choice
 
 if [ "$choice" = "y" ]; then
-  env vim +PluginInstall +qall
+  vim +PluginInstall +qall
 else
   echo 'Thanks for using my configuration do not forget to contribut\n if you think you can add more features to it\n make a pull request'
   exit 1
