@@ -1,4 +1,7 @@
 main() {
+
+  # check if tput is installed if is installed then set coloration
+
   if which tput >/dev/null 2>&1; then
     ncolors=$(tput colors)
   fi

@@ -30,7 +30,9 @@ Plugin 'othree/html5.vim'
 Plugin 'elzr/vim-json'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'vim-scripts/SyntaxComplete'
+Plugin 'Valloric/YouCompleteMe'
 "Plugin 'ryanoasis/vim-devicons'
+Plugin 'Yggroot/indentLine'
 
 "Colorscheme installed"
 Plugin 'tomasr/molokai'
