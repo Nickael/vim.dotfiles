@@ -185,7 +185,9 @@ noremap <Right> <NOP>
 noremap <F1> <NOP>
 noremap <Space> :set hlsearch! hlsearch?<CR>
 
+
 "nnoremap <Space> :buffers<CR>:buffer<Space>
+
 
 nnoremap <silent> <Right> :bn<CR>
 nnoremap <silent> <Left> :bp<CR>
