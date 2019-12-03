@@ -40,7 +40,7 @@ Plugin 'jonathanfilip/vim-lucius'
 "Plugin 'AlessandroYorba/Sierra'
 "Plugin 'ninja/sky'
 "Plugin 'atelierbram/vim-colors_duotones'
-"Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'NLKNguyen/papercolor-theme'
 "Plugin 'atelierbram/vim-colors_atelier-schemes'
 "Plugin 'gosukiwi/vim-atom-dark'
 "Plugin 'lanox/lanox-vim-theme'
@@ -53,7 +53,8 @@ call vundle#end()
 let g:Powerline_symbols = 'fancy'
 
 "Set colorscheme
-colorscheme molokai
+"colorscheme molokai
+colorscheme PaperColor
 " List of colorscheme
 " sky
 " sierra
@@ -162,9 +163,9 @@ if has("autocmd") && exists("+omnifunc")
                 \Completeendif
 endif
 
-highlight LineNr ctermfg=239 ctermbg=235
+highlight LineNr ctermfg=239 ctermbg=254
 highlight CursorLineNR ctermfg=239
-highlight ColorColumn ctermbg=235
+highlight ColorColumn ctermbg=254
 highlight Search ctermbg=240 ctermfg=248
 
 
