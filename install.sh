@@ -92,7 +92,7 @@ main() {
   mkdir -v $HOME/.vim $HOME/.vim/bundle
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-  printf "Launching emacs : "
+  printf "Launching vim : "
   for i in {5..1}; do
     printf "."
     sleep 1
