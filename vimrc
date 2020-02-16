@@ -11,9 +11,6 @@ endif
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-
-
-
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -31,18 +28,18 @@ Plugin 'elzr/vim-json'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'vim-scripts/SyntaxComplete'
 Plugin 'Valloric/YouCompleteMe'
-"Plugin 'ryanoasis/vim-devicons'
-Plugin 'Yggroot/indentLine'
+Plugin 'ryanoasis/vim-devicons'
+"Plugin 'Yggroot/indentLine'
 
 "Colorscheme installed"
-Plugin 'tomasr/molokai'
-Plugin 'jonathanfilip/vim-lucius'
+"Plugin 'tomasr/molokai'
+"Plugin 'jonathanfilip/vim-lucius'
 "Plugin 'AlessandroYorba/Sierra'
 "Plugin 'ninja/sky'
 "Plugin 'atelierbram/vim-colors_duotones'
-Plugin 'NLKNguyen/papercolor-theme'
+"Plugin 'NLKNguyen/papercolor-theme'
 "Plugin 'atelierbram/vim-colors_atelier-schemes'
-"Plugin 'gosukiwi/vim-atom-dark'
+Plugin 'gosukiwi/vim-atom-dark'
 "Plugin 'lanox/lanox-vim-theme'
 "Plugin 'scwood/vim-hybrid'
 "Plugin 'joshdick/onedark.vim'
@@ -54,7 +51,8 @@ let g:Powerline_symbols = 'fancy'
 
 "Set colorscheme
 "colorscheme molokai
-colorscheme PaperColor
+"colorscheme PaperColor
+colorscheme atom-dark-256
 " List of colorscheme
 " sky
 " sierra
@@ -163,11 +161,10 @@ if has("autocmd") && exists("+omnifunc")
                 \Completeendif
 endif
 
-highlight LineNr ctermfg=239 ctermbg=254
+highlight LineNr ctermfg=239 ctermbg=235
 highlight CursorLineNR ctermfg=239
-highlight ColorColumn ctermbg=254
+highlight ColorColumn ctermbg=235
 highlight Search ctermbg=240 ctermfg=248
-
 
 let g:ctrlp_map = '<BS>'
 let php_sql_query = 1
@@ -178,7 +175,7 @@ let g:html5_aria_attributes_complete = 0
 let g:indentLine_noConcealCursor=""
 
 "Shortcuts
-map <F2> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
