@@ -3,7 +3,10 @@
 ### Prerequisites
 
 To use this configuration correctly, you need to install this cli programms
-**gcc**, **cmake**, **clang**
+**gcc**, 
+**cmake**, 
+**clang**, 
+**python3.6-dev** or depending on your python version
 
 #### Getting [GCC](https://gcc.gnu.org/install/)
 
@@ -20,7 +23,7 @@ or
 ```
 [more information here](https://gcc.gnu.org/install/)
 
-#### Geting cmake
+#### Getting cmake
 ```shell
 $ sudo apt-get install -y cmake
 ```
@@ -29,12 +32,22 @@ or
 ```shell
 # yum install cmake
 ```
+#### Getting Clang
+```shell
+$ sudo apt-get install -y clang
+```
+or
+
+```shell
+# yum install clang
+```
 
 # Good to know
 
 #### Getting powerline fonts
 
-Make sure you change you shell default font to powerline fonts. [Get all of them here](https://github.com/powerline/fonts)
+Make sure you change you shell default font to powerline fonts. [Get all of powerline fonts here](https://github.com/powerline/fonts)
+or to nerd fonts. [Get all of nerd fonts here](https://github.com/ryanoasis/nerd-fonts#font-installation)
 
 # Basic installation
 
@@ -54,5 +67,13 @@ sh -c "$(wget https://raw.githubusercontent.com/Nickael/vim.dotfiles/master/inst
 
 * If you want vim to use ***powerline ***  
 -->
+
+## Configure YouCompleteMe
+When the installation is done navigate to `~/.vim/bundles/YouCompleteMe`
+Then run the command bellow to install YouCompleteMe configuration : 
+
+```shell
+./install.py --all
+```
 
 # Good luck and enjoy
