@@ -14,7 +14,7 @@ To make sure you do not have any problems using **auto-complete** for C/C++ you 
 **provide** some information inside the `.vimrc` files.
 
 ```shell
-$ sudo apt-get install -y gcc
+$ sudo apt install -y gcc
 ```
 or
 
@@ -25,7 +25,7 @@ or
 
 #### Getting cmake
 ```shell
-$ sudo apt-get install -y cmake
+$ sudo apt install -y cmake
 ```
 or
 
@@ -34,12 +34,23 @@ or
 ```
 #### Getting Clang
 ```shell
-$ sudo apt-get install -y clang
+$ sudo apt install -y clang
 ```
 or
 
 ```shell
 # yum install clang
+```
+#### Getting Python Headers
+For Python3.6 installed version
+
+```shell
+$ sudo apt install -y python3.6-dev
+```
+or
+
+```shell
+# yum install python3.6-dev
 ```
 
 # Good to know
