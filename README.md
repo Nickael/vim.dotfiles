@@ -7,6 +7,7 @@ To use this configuration correctly, you need to install this cli programms
 **cmake**, 
 **clang**, 
 **python3.6-dev** or depending on your python version
+**vim 8.1** min version
 
 #### Getting [GCC](https://gcc.gnu.org/install/)
 
@@ -52,6 +53,14 @@ or
 ```shell
 # yum install python3.6-dev
 ```
+
+#### Getting Vim 8.1
+```shell
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+```
+source [here](https://itsfoss.com/vim-8-release-install/)
 
 # Good to know
 
