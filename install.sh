@@ -34,27 +34,6 @@ main() {
     exit 1
   }
 
-  # Check if gcc is installed
-
-  hash gcc >/dev/null 2>&1 || {
-    echo "${BOLD}${RED}Error: gcc is not installed${NORMAL}\n"
-    exit 1
-  }
-
-  # Check if cmake is installed
-
-  hash cmake >/dev/null 2>&1 || {
-    echo "${BOLD}${RED}Error: cmake is not installed${NORMAL}\n"
-    exit 1
-  }
-
-  # Check if clang is installed
-
-  hash clang >/dev/null 2>&1 || {
-    echo "${BOLD}${RED}Error: clang is not installed${NORMAL}\n"
-    exit 1
-  }
-
   # Cloning remote repository
 
   if [ "$OSTYPE" = cygwin ]; then
@@ -90,7 +69,9 @@ main() {
 
   printf "${YELLOW}${BOLD}Cloning new VundleVim repos before installing plugins${NORMAL}\n"
   mkdir -v $HOME/.vim $HOME/.vim/bundle
-  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  # git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  # using Plug instead of Vundle as package manager
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
   printf "Launching vim : "
   for i in {5..1}; do

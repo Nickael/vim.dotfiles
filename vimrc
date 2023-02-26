@@ -16,40 +16,39 @@ filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
-"Plugins installed"
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'spf13/vim-autoclose'
-Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/unite.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'chrisbra/csv.vim'
-Plugin 'othree/html5.vim'
-Plugin 'elzr/vim-json'
-Plugin 'StanAngeloff/php.vim'
-Plugin 'vim-scripts/SyntaxComplete'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ryanoasis/vim-devicons'
-"Plugin 'Yggroot/indentLine'
+call plug#begin()
+"Plugs installed"
+Plug 'scrooloose/nerdtree'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'spf13/vim-autoclose'
+Plug 'scrooloose/syntastic'
+Plug 'Shougo/unite.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'chrisbra/csv.vim'
+Plug 'othree/html5.vim'
+Plug 'elzr/vim-json'
+Plug 'StanAngeloff/php.vim'
+Plug 'vim-scripts/SyntaxComplete'
+Plug 'Valloric/YouCompleteMe'
+Plug 'ryanoasis/vim-devicons'
+"Plug 'Yggroot/indentLine'
 
 "Colorscheme installed"
-"Plugin 'tomasr/molokai'
-Plugin 'jonathanfilip/vim-lucius'
-"Plugin 'AlessandroYorba/Sierra'
-"Plugin 'ninja/sky'
-"Plugin 'atelierbram/vim-colors_duotones'
-Plugin 'NLKNguyen/papercolor-theme'
-"Plugin 'atelierbram/vim-colors_atelier-schemes'
-Plugin 'gosukiwi/vim-atom-dark'
-Plugin 'arcticicestudio/nord-vim'
-"Plugin 'lanox/lanox-vim-theme'
-"Plugin 'scwood/vim-hybrid'
-"Plugin 'joshdick/onedark.vim'
-"Plugin 'mkarmona/materialbox'
-"Plugin 'jscappini/material.vim'
-call vundle#end()
+"Plug 'tomasr/molokai'
+Plug 'jonathanfilip/vim-lucius'
+"Plug 'AlessandroYorba/Sierra'
+"Plug 'ninja/sky'
+"Plug 'atelierbram/vim-colors_duotones'
+Plug 'NLKNguyen/papercolor-theme'
+"Plug 'atelierbram/vim-colors_atelier-schemes'
+Plug 'gosukiwi/vim-atom-dark'
+Plug 'arcticicestudio/nord-vim'
+"Plug 'lanox/lanox-vim-theme'
+"Plug 'scwood/vim-hybrid'
+"Plug 'joshdick/onedark.vim'
+"Plug 'mkarmona/materialbox'
+"Plug 'jscappini/material.vim'
+call plug#end()
 
 let g:Powerline_symbols = 'fancy'
 
@@ -104,7 +103,7 @@ endfunction
 "call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 
-filetype plugin indent on
+filetype Plug indent on
 
 syntax enable
 
