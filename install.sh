@@ -72,6 +72,7 @@ main() {
   # git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   # using Plug instead of Vundle as package manager
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine
 
   printf "Launching vim : "
   for i in {5..1}; do
@@ -92,7 +93,7 @@ echo -e 'Would you like to auto-install vim plugins ? y or n then presse [ENTER]
 read choice
 
 if [ "$choice" = "y" ]; then
-  vim +PluginInstall +qall
+  vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
 else
   echo 'Thanks for using my configuration do not forget to contribut\n if you think you can add more features to it\n make a pull request'
   exit 1

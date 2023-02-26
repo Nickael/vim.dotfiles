@@ -14,7 +14,8 @@ set rtp+=$HOME/.local/lib/python3.10/site-packages/powerline/bindings/vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=~/.vim/bundle/Vundle.vim
+"  set rtp+=~/.vim/bundle/Vundle.vim
+
 
 call plug#begin()
 "Plugs installed"
