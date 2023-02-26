@@ -103,7 +103,7 @@ endfunction
 "call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 
-filetype Plug indent on
+filetype plugin indent on
 
 syntax enable
 
