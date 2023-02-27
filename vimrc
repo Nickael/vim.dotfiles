@@ -15,7 +15,15 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 "  set rtp+=~/.vim/bundle/Vundle.vim
-
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+\| PlugInstall --sync | source $MYVIMRC
+\| endif
 
 call plug#begin()
 "Plugs installed"
@@ -32,7 +40,7 @@ Plug 'StanAngeloff/php.vim'
 Plug 'vim-scripts/SyntaxComplete'
 Plug 'Valloric/YouCompleteMe'
 Plug 'ryanoasis/vim-devicons'
-"Plug 'Yggroot/indentLine'
+Plug 'Yggdroot/indentLine'
 
 "Colorscheme installed"
 "Plug 'tomasr/molokai'
@@ -179,6 +187,7 @@ let g:html5_event_handler_attributes_complete = 0
 let g:html5_rdfa_attributes_complete = 0
 let g:html5_aria_attributes_complete = 0
 let g:indentLine_noConcealCursor=""
+let g:indentLine_setColors = 0
 
 "Shortcuts
 map <C-t> :NERDTreeToggle<CR>
