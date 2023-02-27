@@ -37,14 +37,9 @@ or to nerd fonts. [Get all of nerd fonts here](https://github.com/ryanoasis/nerd
 ## Via curl
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Nickael/vim.dotfiles/master/install.sh)"
+git clone https://github.com/Nickael/vim.dotfiles.git && cd vim.dotfiles && ./install.sh && cd - && rm -fr vim.dotfil
 ```
 
-## Via wget
-
-```shell
-sh -c "$(wget https://raw.githubusercontent.com/Nickael/vim.dotfiles/master/install.sh -O -)"
-```
 <!--
 # IMPORTANT
 
