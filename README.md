@@ -3,8 +3,18 @@
 ### Prerequisites
 
 To use this configuration correctly, you need to install this cli programms
+**git** or depending on your python version
 **python3.6-dev** or depending on your python version
 **vim 8.1** min version
+#### Getting Git CLI
+```shell
+$ sudo apt install -y git
+```
+or
+
+```shell
+# yum install python3.6-dev
+```
 #### Getting Python Headers
 For Python3.6 installed version
 
@@ -37,7 +47,7 @@ or to nerd fonts. [Get all of nerd fonts here](https://github.com/ryanoasis/nerd
 ## Via curl
 
 ```shell
-git clone https://github.com/Nickael/vim.dotfiles.git && cd vim.dotfiles && ./install.sh && cd - && rm -fr vim.dotfil
+git clone https://github.com/Nickael/vim.dotfiles.git && cd vim.dotfiles && ./install.sh && cd - && rm -fr vim.dotf*
 ```
 
 <!--
