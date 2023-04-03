@@ -34,14 +34,14 @@ main() {
 
   hash git >/dev/null 2>&1 || {
       printf "${RED}Error: ${BOLD}GIT${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y git\` to install it.${NORMAL}\n"
-      echo "Error: git is not installed\n"
+        echo "Error: git is not installed\n"
         exit 1
-  }
+    }
 
-  hash ccze >/dev/null 2>&1 || {
-      printf "${RED}Error: ${BOLD}CCZE${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y git\` to install it.\n"
-    exit 1
-  }
+    hash ccze >/dev/null 2>&1 || {
+        printf "${RED}Error: ${BOLD}CCZE${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y git\` to install it.\n"
+            exit 1
+        }
 
   # Cloning remote repository
   CURRENT_DATE=$(date +%Y%m%d_%H%M%S)
@@ -114,6 +114,30 @@ printf "${YELLOW}${BOLD} • Plugin installed\n"
 echo "${GREEN}------------------------------------------------${NORMAL}"
 
 if [ -d "$YCM_FOLDER" ]; then
+    hash cmake >/dev/null 2>&1 || {
+        printf "${RED}Error: ${BOLD}CMAKE${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y cmake\` to install it.${NORMAL}\n"
+            echo "Error: cmake is not installed\n"
+            exit 1
+    }
+
+    hash gcc >/dev/null 2>&1 || {
+        printf "${RED}Error: ${BOLD}gcc${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y gcc\` to install it.${NORMAL}\n"
+            echo "Error: gcc is not installed\n"
+            exit 1
+    }
+
+    hash gpp >/dev/null 2>&1 || {
+        printf "${RED}Error: ${BOLD}gpp${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y gpp\` to install it.${NORMAL}\n"
+            echo "Error: gpp is not installed\n"
+            exit 1
+    }
+
+    hash g++ >/dev/null 2>&1 || {
+        printf "${RED}Error: ${BOLD}g++${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y g++\` to install it.${NORMAL}\n"
+            echo "Error: g++ is not installed\n"
+            exit 1
+    }
+
     printf "${YELLOW}${BOLD} • Building YCM.${NORMAL}\n"
     echo "${GREEN}------------------------------------------------${NORMAL}"
     exec $YCM_FOLDER/install.py --all | ccze -A
