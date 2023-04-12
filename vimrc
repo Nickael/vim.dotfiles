@@ -188,6 +188,7 @@ let g:html5_rdfa_attributes_complete = 0
 let g:html5_aria_attributes_complete = 0
 let g:indentLine_noConcealCursor=""
 let g:indentLine_setColors = 0
+let g:vim_json_syntax_conceal = 0
 
 "Shortcuts
 map <C-t> :NERDTreeToggle<CR>
