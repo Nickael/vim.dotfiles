@@ -38,11 +38,6 @@ main() {
         exit 1
     }
 
-    hash ccze >/dev/null 2>&1 || {
-        printf "${RED}Error: ${BOLD}CCZE${NORMAL}${RED} is not installed.\nPlease run \`sudo apt install -y git\` to install it.\n"
-            exit 1
-        }
-
   # Cloning remote repository
   CURRENT_DATE=$(date +%Y%m%d_%H%M%S)
   VIMRC=~/.vimrc
@@ -108,7 +103,7 @@ rm -fr $VIM_DOT_FOLDER
 printf "${GREEN}------------------------------------------------\n"
 printf "${YELLOW}${BOLD} • Installing Vim pluging now...${NORMAL}\n"
 printf "${GREEN}------------------------------------------------${NORMAL}\n"
-vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa" | ccze -A && echo ' '
+vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa" && echo ' '
 echo "${GREEN}------------------------------------------------"
 printf "${YELLOW}${BOLD} • Plugin installed\n"
 echo "${GREEN}------------------------------------------------${NORMAL}"
@@ -140,6 +135,6 @@ if [ -d "$YCM_FOLDER" ]; then
 
     printf "${YELLOW}${BOLD} • Building YCM.${NORMAL}\n"
     echo "${GREEN}------------------------------------------------${NORMAL}"
-    exec $YCM_FOLDER/install.py --all | ccze -A
+    exec $YCM_FOLDER/install.py --all
     exit
 fi
